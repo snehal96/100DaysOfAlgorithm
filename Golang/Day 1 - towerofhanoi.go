@@ -11,11 +11,9 @@ func printHanoi(n int64, left, right, middle string) {
 		fmt.Println(left + " => " + right)
 		printHanoi(n-1, middle, right, left)
 	}
-	// return 0;
 }
 
 func main() {
-	// reader := bufio.NewReader(os.Stdin)
 	var input string
 	_, err := fmt.Scan(&input)
 
